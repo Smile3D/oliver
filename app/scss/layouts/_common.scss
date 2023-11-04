@@ -126,6 +126,15 @@ h6,
 .lang {
 	position: relative;
 
+	@include media(">=tablet") {
+		&:hover {
+			.lang-drop-menu {
+				opacity: 1;
+				visibility: visible;
+			}
+		}
+	}
+
 	&.open-drop-down-menu {
 		.lang-drop-menu {
 			opacity: 1;
@@ -174,6 +183,7 @@ h6,
 
 .lang-drop-menu {
 	@extend %listreset;
+	@include animate(opacity visibility);
 
 	position: absolute;
 	top: 100%;
@@ -269,7 +279,7 @@ h6,
 	position: relative;
 	border-radius: 0 0 30px 30px;
 	overflow: hidden;
-	padding: 75px 0 0;
+	padding: 82px 0 0;
 
 	&:after {
 		content: "";
@@ -329,8 +339,10 @@ h6,
 		}
 
 		+ .widget__input-group {
-			padding: 15px 0 0;
-			border-top: 1px solid #eaeaea;
+			@include media("<tablet") {
+				padding: 15px 0 0;
+				border-top: 1px solid #eaeaea;
+			}
 		}
 	}
 
