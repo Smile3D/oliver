@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Project Title</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+		<link media="all" rel="stylesheet" href="css/main.min.css" />
+        <link media="all" rel="stylesheet" href="css/datepicker.min.css" />
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
+	</head>
+
+	<body>
+		<div class="wrapper">
+			<header class="header">
+                <div class="container">
+                    <div class="header__holder">
+                        <strong class="logo">
+                            <img src="images/logo.svg" alt="">
+                        </strong>
+                        <div class="header__right-bar">
+                            <div class="lang">
+                                <button type="button" class="choose-lang">
+                                    <img src="images/lang/uk.svg" alt="" /><span class="choose-lang__text">English (International)</span>
+                                    <svg class="icon"><use xlink:href="/images/svgIcons/sprite.svg#chevron-bottom"></use></svg>
+                                </button>
+                                <ul class="lang-drop-menu">
+                                    <li>
+                                        <a href="#"><img src="./images/lang/uk.svg" alt="" />English (International)</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="./images/lang/us.svg" alt="" />English (United States)</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="./images/lang/spain.svg" alt="" />Spain</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="./images/lang/brazil.svg" alt="" />Brazil</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="./images/lang/italy.svg" alt="" />Italy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="./images/lang/portugal.svg" alt="" />Portugal</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="./images/lang/greece.svg" alt="" />Greece</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="./images/lang/turkey.svg" alt="" />Turkey</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="./images/lang/germany.svg" alt="" />Germany</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a href="#" class="btn-outline">Login</a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+			<main class="main">
+				<div class="hero-section" style="background-image: url('images/hero.webp')">
+					<div class="container">
+						<div class="hero-section__content">
+							<h1>Airport Transfers</h1>
+							<p>Your reliable airport taxi and transfer service. Fixed Prices and Easy Bookings.</p>
+						</div>
+                        <div class="widget">
+                            <div class="widget__input-group">
+                                <div class="widget__input-group-location">
+                                    <div class="widget__input-holder">
+                                        <input type="text" placeholder="Pickup location">
+                                        <svg class="icon"><use xlink:href="/images/svgIcons/sprite.svg#pin"></use></svg>
+                                    </div>
+                                    <div class="widget__input-holder">
+                                        <input type="text" placeholder="Dropoff location">
+                                        <svg class="icon"><use xlink:href="/images/svgIcons/sprite.svg#flag"></use></svg>
+                                    </div>
+                                </div>
+                                <div class="widget__input-group-date">
+                                    <div class="widget__input-holder">
+                                        <input data-toggle="datepicker" class="datepicker" readonly type="text" placeholder="MM-DD-YYYY">
+                                    </div>
+                                    <div class="widget__input-holder">
+                                        <input class="timepicker" readonly type="text" placeholder="HH:MM">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="widget__input-group">
+                                <div class="widget__input-group-location">
+                                    <div class="widget__input-holder">
+                                        <input type="text" placeholder="Pickup location">
+                                        <svg class="icon"><use xlink:href="/images/svgIcons/sprite.svg#pin"></use></svg>
+                                    </div>
+                                    <div class="widget__input-holder">
+                                        <input type="text" placeholder="Dropoff location">
+                                        <svg class="icon"><use xlink:href="/images/svgIcons/sprite.svg#flag"></use></svg>
+                                    </div>
+                                </div>
+                                <div class="widget__input-group-date">
+                                    <div class="widget__input-holder">
+                                        <input data-toggle="datepicker" class="datepicker" readonly type="text" placeholder="MM-DD-YYYY">
+                                    </div>
+                                    <div class="widget__input-holder">
+                                        <input class="timepicker" readonly type="text" placeholder="HH:MM">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom-row">
+                                <div class="switchers">
+                                    <div class="switcher-holder">
+                                        <input type="checkbox" id="switcher-1">
+                                        <label for="switcher-1"></label>
+                                        Hourly Ride
+                                    </div>
+                                    <div class="switcher-holder">
+                                        <input type="checkbox" id="switcher-2">
+                                        <label for="switcher-2"></label>
+                                        Return Trip
+                                    </div>
+                                </div>
+                                <a href="#" class="btn">Next step</a>
+                            </div>
+                        </div>
+					</div>
+				</div>
+                <section class="unique-airport-taxi section-spacing">
+                    <div class="container">
+                        <div class="title-block">
+                            <h2>Why Book an Airport Transfer?</h2>
+                        </div>
+                        <div class="unique-airport-taxi__holder">
+                            <div class="unique-airport-taxi__item">
+                                <img src="images/english-speaking-suppor.svg" alt="English Speaking Support">
+                                <div class="unique-airport-taxi__item-content">
+                                <h5>English Speaking Support</h5>
+                                <p>If you have some questions seeking clarification, you can contact our support team 24/7.</p>
+                            </div>
+                        </div>
+                        <div class="unique-airport-taxi__item">
+                            <img src="images/unique-flexible-cancellation.svg" alt="Flexible cancellation">
+                            <div class="unique-airport-taxi__item-content">
+                                <h5>Flexible cancellation</h5>
+                                <p>Free changes and flexible cancellation for trips up to 24 hours before the beginning of your ride.</p>
+                            </div>
+                        </div>
+                        <div class="unique-airport-taxi__item">
+                            <img src="images/unique-fixed-price.svg" alt="Fixed price">
+                            <div class="unique-airport-taxi__item-content">
+                                <h5>Fixed price</h5>
+                                <p>We have fixed rates. Once paid, we don’t ask you to cover additional costs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="how-it-works section-spacing">
+                    <div class="container">
+                        <div class="how-it-works__holder">
+                            <div class="how-it-works__content">
+                                <h2>How It Works</h2>
+                                <p>Booking your transfers is simple. In just a few clicks, you ensure safe and reliable transportation, anywhere.</p>
+                            </div>
+                            <div class="how-it-works__steps">
+                                <div class="how-it-works__step-item">
+                                    <h5>Book your Transfer</h5>
+                                    <div class="how-it-works__step-item-image">
+                                        <img src="images/step-1.svg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="how-it-works__step-item">
+                                    <h5>Receive Confirmation</h5>
+                                    <div class="how-it-works__step-item-image">
+                                        <img src="images/step-2.svg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="how-it-works__step-item">
+                                    <h5>Contact your Driver</h5>
+                                    <div class="how-it-works__step-item-image">
+                                        <img src="images/step-3.svg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="how-it-works__step-item">
+                                    <h5>Sit back and Enjoy the Ride!</h5>
+                                    <div class="how-it-works__step-item-image">
+                                        <img src="images/step-4.svg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="how-it-works__step-item">
+                                    <h5>Meet your Driver at the Airport</h5>
+                                    <div class="how-it-works__step-item-image">
+                                        <img src="images/step-5.svg" alt="" />
+                                    </div>
+                                </div>
+                                <div class="how-it-works__step-item">
+                                    <h5>Enjoy your Flight 😊</h5>
+                                    <div class="how-it-works__step-item-image">
+                                        <img src="images/step-6.svg" alt="" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="your-journey section-spacing">
+                    <div class="container">
+                        <div class="your-journey__holder">
+                            <div class="your-journey__content">
+                                <h2>Stay up to date during your journey</h2>
+                                <p>You'll be kept in the loop  every step of the transfer, with a full trip itinerary and easy ways to contact your driver.</p>
+                            </div>
+                            <img src="images/phone.webp" alt="Stay up to date during your journey">
+                        </div>
+                    </div>
+                </section>
+				<section class="provide section-spacing" data-aos="fade-up" data-aos-duration="2000">
+					<div class="container">
+						<div class="provide__holder">
+							<div class="title-block">
+								<h2>We provide a unique Airport Taxi experience, every time.</h2>
+								<p>
+									Not only will your driver ensure you arrive safely, they will also be your first
+									point of introduction to a new destination.
+								</p>
+							</div>
+							<div class="provide__grid">
+								<div class="provide__grid-item">
+									<img src="images/location-1.webp" alt="" />
+								</div>
+								<div class="provide__grid-item">
+									<img src="images/location-2.webp" alt="" />
+								</div>
+								<div class="provide__grid-item">
+									<img src="images/location-3.webp" alt="" />
+								</div>
+								<div class="provide__grid-item">
+									<img src="images/location-4.webp" alt="" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+                 <section class="discover-destinations section-spacing" data-aos="fade-up" data-aos-duration="2000">
+                    <div class="container">
+                        <div class="discover-destinations__holder">
+                            <div class="title-block">
+                                <h2>How do you like to travel?</h2>
+                                <p>From Economy to First-Class, Sedans, Vans and Shuttles - Check which vehicles we offer on each continent. With AtoB, you <b>travel your way</b>.</p>
+                            </div>
+                            <div class="vehicle-platform__grid">
+                                <div class="vehicle-card">
+                                    <div class="vehicle-card__image">
+                                        <img src="images/auto-8.webp" alt="">
+                                    </div>
+                                    <div class="vehicle-card__bottom">
+                                        <span class="vehicle-card__total-place">
+                                            <svg class="icon"><use xlink:href="/images/svgIcons/sprite.svg#group-people"></use></svg> x 4
+                                        </span>
+                                        <h5>Economy Class</h5>
+                                        <p>Skoda Octavia or Similar</p>
+                                    </div>
+                                </div>
+                                <div class="vehicle-card">
+                                    <div class="vehicle-card__image">
+                                        <img src="images/auto-5.webp" alt="">
+                                    </div>
+                                    <div class="vehicle-card__bottom">
+                                        <span class="vehicle-card__total-place">
+                                            <svg class="icon"><use xlink:href="/images/svgIcons/sprite.svg#group-people"></use></svg> x 8
+                                        </span>
+                                        <h5>Economy Van</h5>
+                                        <p>Mercedes Benz Vito class or Similar</p>
+                                    </div>
+                                </div>
+                                <div class="vehicle-card">
+                                    <div class="vehicle-card__label vehicle-card__label--vip">
+                                        <svg class="icon"><use xlink:href="/images/svgIcons/sprite.svg#vip"></use></svg>
+                                    </div>
+                                    <div class="vehicle-card__image">
+                                        <img src="images/auto-6.webp" alt="">
+                                    </div>
+                                    <div class="vehicle-card__bottom">
+                                        <span class="vehicle-card__total-place">
+                                            <svg class="icon"><use xlink:href="/images/svgIcons/sprite.svg#group-people"></use></svg> x 3
+                                        </span>
+                                        <h5>Business Class</h5>
+                                        <p>Mercedes Benz  E class or Similar</p>
+                                    </div>
+                                </div>
+                                <div class="vehicle-card">
+                                    <div class="vehicle-card__label vehicle-card__label--vip">
+                                        <svg class="icon"><use xlink:href="/images/svgIcons/sprite.svg#vip"></use></svg>
+                                    </div>
+                                    <div class="vehicle-card__image">
+                                        <img src="images/auto-1.webp" alt="">
+                                    </div>
+                                    <div class="vehicle-card__bottom">
+                                        <span class="vehicle-card__total-place">
+                                            <svg class="icon"><use xlink:href="/images/svgIcons/sprite.svg#group-people"></use></svg> x 3
+                                        </span>
+                                        <h5>First-Class</h5>
+                                        <p>Mercedes Benz S class or Similar</p>
+                                    </div>
+                                </div>
+                                <div class="vehicle-card">
+                                    <div class="vehicle-card__label vehicle-card__label--vip">
+                                        <svg class="icon"><use xlink:href="/images/svgIcons/sprite.svg#vip"></use></svg>
+                                    </div>
+                                    <div class="vehicle-card__image">
+                                        <img src="images/auto-7.webp" alt="">
+                                    </div>
+                                    <div class="vehicle-card__bottom">
+                                        <span class="vehicle-card__total-place">
+                                            <svg class="icon"><use xlink:href="/images/svgIcons/sprite.svg#group-people"></use></svg> x 7
+                                        </span>
+                                        <h5>Business Van</h5>
+                                        <p>Mercedes V class or Similar</p>
+                                    </div>
+                                </div>
+                                <div class="vehicle-card">
+                                    <div class="vehicle-card__image">
+                                        <img src="images/auto-3.webp" alt="">
+                                    </div>
+                                    <div class="vehicle-card__bottom">
+                                        <span class="vehicle-card__total-place">
+                                            <svg class="icon"><use xlink:href="/images/svgIcons/sprite.svg#group-people"></use></svg> x 12
+                                        </span>
+                                        <h5>Sprinter Class</h5>
+                                        <p>Mercedes Sprinter or Similar</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+				<section class="benefits-children section-spacing" data-aos="fade-up" data-aos-duration="2000">
+					<div class="container">
+						<div class="benefits-children__holder">
+							<div class="benefits-children__content">
+								<span class="benefits-children__decor-icon">👶🍼</span>
+								<h2>Travelling with Little ones?</h2>
+								<ul class="benefits-children__list">
+									<li>
+										<span class="benefits-children__label"><strong>Baby seat</strong> - </span>9-18
+										kg of weight
+									</li>
+									<li>
+										<span class="benefits-children__label"><strong>Booster</strong> - </span>15-36
+										kg of weight
+									</li>
+									<li>
+										<span class="benefits-children__label"><strong>Infant seat</strong> - </span>up
+										to 9 kg of weight
+									</li>
+								</ul>
+							</div>
+							<div
+								class="benefits-children__image"
+								style="background-image: url('images/baby-chair.webp')"
+							></div>
+						</div>
+					</div>
+				</section>
+				<section class="questions-answers section-spacing" data-aos="fade-up" data-aos-duration="2000">
+					<div class="container">
+						<div class="questions-answers__holder">
+							<div class="title-block">
+								<h2>Questions And Answers</h2>
+							</div>
+							<div class="questions-answers__item">
+								<h3>Are transfers more expensive than a standard taxi?</h3>
+								<p>
+									In most cases, the price of our service will be similar of a taxi. The added bonus
+									of booking with a transfer, is that you will get a fixed rate (i.e., you won’t be
+									charged more if there is traffic), your driver will speak English (we test for this
+									before working with any driver), and most important of a transfer – you can
+									personalize your ride!
+								</p>
+							</div>
+							<div class="questions-answers__item">
+								<h3>Where do I meet my driver?</h3>
+								<p>
+									Your driver will get in touch with you at least one day prior to your specific
+									arrival date. They will confirm the exact pickup spot, usually by providing you with
+									an easy-to-spot shop or sign that is close by.
+								</p>
+							</div>
+							<div class="questions-answers__item">
+								<h3>What if I need to make an additional stop during the trip?</h3>
+								<p>
+									That is a common request we get. You may need to stop off somewhere to pickup other
+									passengers, or maybe you just want to follow a specific route. We allow you to add
+									extra stops during your trip in just a few clicks.
+								</p>
+							</div>
+							<div class="questions-answers__item">
+								<h3>Can I only book Airport Transfers?</h3>
+								<p>
+									Although airport transfers are what we are most known for, we also offer hourly
+									chauffeur services in your destination of choice. With this service you can choose
+									to book a professional driver to get you around the city, be this for your business
+									meetings, or just as a safe way to discover the new destination.
+								</p>
+							</div>
+							<div class="questions-answers__item">
+								<h3>Can I choose which vehicle picks me up?</h3>
+								<p>
+									You can definitely choose the vehicle class (i.e., economy, business or
+									first-class). Usually the brand of the vehicle is detailed on the booking page,
+									although in certain situations you may be allocated a different brand, due to
+									availability restrictions.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="container">
+					<div class="footer__holder">
+						<p class="copyright">2023 A to B. Transfer & Services. All rights reserved</p>
+						<ul class="payment-list">
+							<li><img src="images/revolut.svg" alt="revolut payment method" /></li>
+                            <li><img src="images/apple-pay.svg" alt="apple pay payment method" /></li>
+                            <li><img src="images/gpay.svg" alt="gpay payment method" /></li>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+		<script src="js/common.min.js"></script>
+        <script src="js/datepicker.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
+	</body>
+</html>
