@@ -16,10 +16,14 @@ document.addEventListener("DOMContentLoaded", () => {
 		});
 	}
 
+	// Link to plugin https://fengyuanchen.github.io/datepicker/
+
 	$('[data-toggle="datepicker"]').datepicker({
 		format: "mm-dd-yyyy",
 		autoHide: "true",
 	});
+
+	// Link to plugin https://timepicker.co/
 
 	$(".timepicker").timepicker({
 		timeFormat: "h:mm p",
