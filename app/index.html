@@ -8,6 +8,8 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
 		<link media="all" rel="stylesheet" href="css/main.min.css" />
+        <link media="all" rel="stylesheet" href="css/datepicker.min.css" />
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
 	</head>
 
 	<body>
@@ -80,10 +82,10 @@
                                 </div>
                                 <div class="widget__input-group-date">
                                     <div class="widget__input-holder">
-                                        <input type="text" placeholder="SEP 1, 2020">
+                                        <input data-toggle="datepicker" class="datepicker" readonly type="text" placeholder="SEP 1, 2020">
                                     </div>
                                     <div class="widget__input-holder">
-                                        <input type="text" placeholder="03:00 AM">
+                                        <input class="timepicker" readonly type="text" placeholder="03:00 AM">
                                     </div>
                                 </div>
                             </div>
@@ -100,10 +102,10 @@
                                 </div>
                                 <div class="widget__input-group-date">
                                     <div class="widget__input-holder">
-                                        <input type="text" placeholder="SEP 1, 2020">
+                                        <input data-toggle="datepicker" class="datepicker" readonly type="text" placeholder="SEP 1, 2020">
                                     </div>
                                     <div class="widget__input-holder">
-                                        <input type="text" placeholder="03:00 AM">
+                                        <input class="timepicker" readonly type="text" placeholder="03:00 AM">
                                     </div>
                                 </div>
                             </div>
@@ -429,5 +431,7 @@
 			</footer>
 		</div>
 		<script src="js/common.min.js"></script>
+        <script src="js/datepicker.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.js"></script>
 	</body>
 </html>

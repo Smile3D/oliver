@@ -10,10 +10,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
 			$(document).on("click", function (event) {
 				if (!$(event.target).closest(".lang").length) {
-					// Закройте выпадающее меню, если клик был вне блока .lang
 					$(".lang").removeClass("open-drop-down-menu");
 				}
 			});
 		});
 	}
+
+	$('[data-toggle="datepicker"]').datepicker({
+		format: "mm-dd-yyyy",
+		autoHide: "true",
+	});
+
+	$(".timepicker").timepicker({
+		timeFormat: "h:mm p",
+		interval: 5,
+		minTime: "10",
+		maxTime: "6:00pm",
+		defaultTime: "11",
+		startTime: "10:00",
+		dynamic: false,
+		dropdown: true,
+		scrollbar: true,
+	});
 });
