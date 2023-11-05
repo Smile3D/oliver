@@ -253,9 +253,10 @@ h6,
 
 .ui-timepicker-standard a {
 	border: none !important;
-	font-size: 15px;
+	font-size: 14px !important;
 	color: #8492a5 !important;
 	cursor: pointer;
+	padding: 5px 2px !important;
 }
 
 .ui-timepicker-standard .ui-state-hover {

@@ -26,12 +26,12 @@ document.addEventListener("DOMContentLoaded", () => {
 	// Link to plugin https://timepicker.co/
 
 	$(".timepicker").timepicker({
-		timeFormat: "h:mm p",
+		timeFormat: "hh:mm p",
 		interval: 5,
-		minTime: "10",
-		maxTime: "6:00pm",
-		defaultTime: "11",
-		startTime: "10:00",
+		minTime: "00:00",
+		maxTime: "23:59",
+		defaultTime: "00:00",
+		startTime: "00:00",
 		dynamic: false,
 		dropdown: true,
 		scrollbar: true,
