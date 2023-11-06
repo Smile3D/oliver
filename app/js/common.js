@@ -24,12 +24,18 @@ document.addEventListener("DOMContentLoaded", () => {
 	$("#hourly_switcher").on("click", function () {
 		// $("#hourly_switcher").toggleClass("active");
 		$(".hourly_trip").toggleClass("active");
+		$(".return_trip-first-row").toggleClass("no-active");
+		$(".return_trip_switcher-block").toggleClass("no-active");
 
-		if ($(".hourly_trip").hasClass("active")) {
-			$(".return_trip_switcher").hide();
-		} else {
-			$(".return_trip_switcher").show();
+		if ($("#hourly_switcher").hasClass("active")) {
+			$(".return_trip-first-row").removeClass("no-active");
 		}
+
+		// if ($(".hourly_trip").hasClass("active")) {
+		// 	$(".return_trip_switcher").hide();
+		// } else {
+		// 	$(".return_trip_switcher").show();
+		// }
 	});
 
 	$(".select-time").selectric({

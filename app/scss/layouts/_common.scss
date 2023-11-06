@@ -1160,6 +1160,13 @@ input[type="checkbox"] {
 	}
 }
 
+.return_trip-first-row,
+.return_trip_switcher-block {
+	&.no-active {
+		display: none;
+	}
+}
+
 .selectric {
 	border-radius: 4px;
 	border: none;
