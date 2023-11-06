@@ -1091,7 +1091,7 @@ input[type="checkbox"] {
 }
 
 #switcher-1,
-#switcher-2 {
+#return_trip_switcher {
 	&:checked + label {
 		&:after {
 			left: calc(100% - 22px);
