@@ -340,7 +340,7 @@ body::-webkit-scrollbar-thumb {
 	position: relative;
 	border-radius: 0 0 30px 30px;
 	overflow: hidden;
-	padding: 82px 0 0;
+	padding: 82px 0 20px;
 
 	&:after {
 		content: "";
@@ -431,7 +431,7 @@ body::-webkit-scrollbar-thumb {
 		grid-gap: 15px;
 
 		input {
-			padding: 5px;
+			padding: 5px 15px 5px 40px;
 		}
 	}
 
@@ -1165,11 +1165,29 @@ input[type="checkbox"] {
 	border: none;
 	background: #fbfbfb;
 	padding: 0 0 0 40px;
+	height: 44px;
 
 	.label {
-		font-size: 14px !important;
+		font-size: 15px !important;
 		color: #8492a5 !important;
-		margin: 0 38px 0 0px;
+		margin: 0 38px 0 0;
+		height: 44px;
+		line-height: 44px;
+	}
+
+	.button {
+		height: 44px;
+		background-color: #fbfbfb;
+
+		&:after {
+			border: none;
+			background-image: url("../images/arrow-down.svg");
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 20px;
+			height: 20px;
+		}
 	}
 }
 
@@ -1192,5 +1210,5 @@ input[type="checkbox"] {
 	border-radius: 8px;
 	margin: 2px 0 0;
 	overflow: hidden;
-	padding: 15px 0 8px;
+	padding: 15px 0 20px;
 }

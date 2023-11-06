@@ -17,12 +17,23 @@ document.addEventListener("DOMContentLoaded", () => {
 	}
 
 	$("#return_trip_switcher").on("click", function () {
-		$("#return_trip_switcher").toggleClass("active");
+		// $("#return_trip_switcher").toggleClass("active");
 		$(".return_trip").toggleClass("active");
 	});
 
+	$("#hourly_switcher").on("click", function () {
+		// $("#hourly_switcher").toggleClass("active");
+		$(".hourly_trip").toggleClass("active");
+
+		if ($(".hourly_trip").hasClass("active")) {
+			$(".return_trip_switcher").hide();
+		} else {
+			$(".return_trip_switcher").show();
+		}
+	});
+
 	$(".select-time").selectric({
-		maxHeight: 200,
+		maxHeight: 170,
 	});
 
 	// Link to plugin https://fengyuanchen.github.io/datepicker/
