@@ -21,6 +21,7 @@ $media-expressions: (
 
 @import "vendors/include-media";
 @import "vendors/normalize";
+@import "vendors/selectric";
 
 @import "base/functions";
 @import "base/variables";

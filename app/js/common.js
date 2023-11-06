@@ -16,6 +16,15 @@ document.addEventListener("DOMContentLoaded", () => {
 		});
 	}
 
+	$("#return_trip_switcher").on("click", function () {
+		$("#return_trip_switcher").toggleClass("active");
+		$(".return_trip").toggleClass("active");
+	});
+
+	$(".select-time").selectric({
+		maxHeight: 200,
+	});
+
 	// Link to plugin https://fengyuanchen.github.io/datepicker/
 
 	$('[data-toggle="datepicker"]').datepicker({
