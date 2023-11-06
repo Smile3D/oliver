@@ -123,6 +123,41 @@ h6,
 	}
 }
 
+.swap-btn {
+	position: absolute;
+	left: 96%;
+	top: 47%;
+	transform: translate(-50%, -50%);
+	background-color: transparent;
+	border: none;
+	padding: 0;
+	z-index: 1;
+
+	@include media(">=tablet") {
+		left: 50%;
+		top: 50%;
+	}
+
+	@include media("<tablet") {
+		width: 25px;
+		height: 25px;
+		border-radius: 50%;
+		border: 1px solid #8492a5;
+		background-color: #fff;
+	}
+
+	.icon {
+		width: 10px;
+		height: 10px;
+		fill: #8492a5;
+
+		@include media(">=tablet") {
+			width: 16px;
+			height: 16px;
+		}
+	}
+}
+
 .lang {
 	position: relative;
 
@@ -408,6 +443,8 @@ body::-webkit-scrollbar-thumb {
 	}
 
 	&__input-group-location {
+		position: relative;
+
 		@include media(">=tablet") {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
@@ -429,6 +466,7 @@ body::-webkit-scrollbar-thumb {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-gap: 15px;
+		position: relative;
 
 		input {
 			padding: 5px 15px 5px 40px;
