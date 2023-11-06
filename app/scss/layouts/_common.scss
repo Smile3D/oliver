@@ -1152,7 +1152,8 @@ input[type="checkbox"] {
 }
 
 .return_trip,
-.hourly_trip {
+.hourly_trip,
+.return_trip-first-row {
 	display: none;
 
 	&.active {
@@ -1160,10 +1161,11 @@ input[type="checkbox"] {
 	}
 }
 
-.return_trip-first-row,
 .return_trip_switcher-block {
-	&.no-active {
-		display: none;
+	display: none;
+
+	&.active {
+		display: flex;
 	}
 }
 

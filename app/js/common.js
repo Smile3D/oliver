@@ -16,29 +16,24 @@ document.addEventListener("DOMContentLoaded", () => {
 		});
 	}
 
-	$("#return_trip_switcher").on("click", function () {
-		// $("#return_trip_switcher").toggleClass("active");
-		// if (!$(".return_trip").hasClass("no-active-return_trip")) {
-		// 	$(".return_trip").toggleClass("active");
-		// }
-
-		$(".return_trip").toggleClass("active");
+	$("#hourly_switcher").on("click", function () {
+		$(".widget__input-group").removeClass("active");
+		$(".return_trip_switcher-block").toggleClass("active");
+		if ($(this).prop("checked")) {
+			$(".hourly_trip").addClass("active");
+			$("#return_trip_switcher").prop("checked", false);
+		} else {
+			$(".return_trip-first-row").addClass("active");
+			if ($("#return_trip_switcher").prop("checked")) {
+				$(".return_trip").addClass("active");
+			}
+		}
 	});
 
-	$("#hourly_switcher").on("click", function () {
-		$(".hourly_trip").toggleClass("active");
-		$(".return_trip-first-row").toggleClass("no-active");
-		$(".return_trip_switcher-block").toggleClass("no-active");
-		// $(".return_trip").removeClass("active");
-
-		if ($("#hourly_switcher").hasClass("active")) {
-			$(".return_trip").removeClass("active");
-			$(".return_trip-first-row").removeClass("no-active");
-		}
-
-		if (!$(".return_trip").hasClass("no-active-return_trip")) {
-			$(".return_trip").toggleClass("no-active-return_trip");
-			// $("#return_trip_switcher").trigger("click");
+	$("#return_trip_switcher").on("click", function () {
+		if ($(this).prop("checked")) {
+			$(".return_trip").addClass("active");
+		} else {
 			$(".return_trip").removeClass("active");
 		}
 	});
