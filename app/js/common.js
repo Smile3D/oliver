@@ -47,6 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	$('[data-toggle="datepicker"]').datepicker({
 		format: "mm-dd-yyyy",
 		autoHide: "true",
+		startDate: new Date(),
 	});
 
 	// Link to plugin https://timepicker.co/
